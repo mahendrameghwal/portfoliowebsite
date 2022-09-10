@@ -1,0 +1,96 @@
+:root {
+  --main-color: #ee7545;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar-expand-md {
+  background-color: var(--main-color);
+}
+.aboutheader {
+  color: var(--main-color);
+}
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+}
+.sec_slide,
+.blockquote-footer {
+  color: black;
+}
+
+.ImMahii img {
+  height: 350px;
+}
+
+.Intro {
+  font-size: 16px;
+  line-height: 2.5;
+  padding: 10px;
+}
+.introanswer {
+  font-size: 17px;
+}
+.study_container {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+.study_header {
+  color: var(--main-color);
+}
+.year_study {
+  color: var(--main-color);
+}
+.year_study {
+  font-weight: bold;
+}
+.progress-bar-striped {
+  background-color: var(--main-color);
+}
+.skills {
+  font-size: 1.3em;
+}
+.Seeproject {
+  color: var(--main-color);
+  background-color: transparent;
+  background-image: none;
+  border-color: var(--main-color);
+}
+.Seeproject:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.cvbtn {
+  color: var(--main-color);
+  background-color: transparent;
+  background-image: none;
+  border-color: var(--main-color);
+}
+.cvbtn:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.projdiv {
+  margin-bottom: 50px;
+}
+.img-thumbnail:hover {
+  transform: scale(1.04);
+  transition: 1s;
+}
+.img-thumbnail {
+  transition: 1s;
+}
+.footerss {
+  font-size: large;
+}
+.footername {
+  color: var(--main-color);
+}
+@media screen and (max-width: 767.98px) {
+  .Intro {
+    margin-left: 80px;
+  }
+}
