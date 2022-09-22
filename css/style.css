@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Outfit:wght@400;700&display=swap');
 :root {
   --main-color: #ee7545;
 }
@@ -6,6 +7,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body{
+  font-family: 'Barlow Semi Condensed', sans-serif;
 }
 .navbar-expand-md {
   background-color: var(--main-color);
@@ -57,10 +61,23 @@
   background-color: transparent;
   background-image: none;
   border-color: var(--main-color);
+  margin-top: 3px;
 }
 .Seeproject:hover {
+  transition: 1s;
   background-color: var(--main-color);
   color: #fff;
+}
+
+.Seeproject:hover, 
+.Seeproject:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+
+}
+
+@keyframes Seeproject {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
 }
 
 .cvbtn {
@@ -76,8 +93,9 @@
 .projdiv {
   margin-bottom: 50px;
 }
+
 .img-thumbnail:hover {
-  transform: scale(1.04);
+  transform: scale(1.01);
   transition: 1s;
 }
 .img-thumbnail {
@@ -89,8 +107,26 @@
 .footername {
   color: var(--main-color);
 }
+
+
+
+
+
 @media screen and (max-width: 767.98px) {
   .Intro {
     margin-left: 80px;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .projdiv{
+    transform: translateX(0);
+  }
+  .aos-animate {
+    transform: translateX(0);
   }
 }
